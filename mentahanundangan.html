@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #countdown {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 15px;
+        }
+    </style>
+    <title>Undangan IGS</title>
+</head>
+<body>
+    <img src="https://belajar-online.ignatiusglobal.sch.id/pluginfile.php/1/core_admin/logo/0x200/1628479610/igs-logos.png" alt="">
+
+    <section id="cover" class="page">
+        <div class="content">
+            <h1>UNDANGAN IGNATIUS GLOBAL SCHOOL</h1>
+            <p>Save the date! 31 Januari 2024</p>
+        </div>
+    </section>
+
+
+    <section id="invitation" class="page">
+        <div class="content">
+            <h2>Acara Opening Gedung Olahraga Ignatius Global School</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo voluptates aliquam esse accusantium praesentium, consequatur dolor incidunt reprehenderit commodi, voluptatem officiis itaque, dolores sequi perspiciatis quibusdam vitae ipsam aperiam. Itaque veniam, laudantium voluptatibus at totam, perferendis commodi autem explicabo dicta, repudiandae dolores sit voluptatum pariatur ad. Ex atque aperiam eos! Magnam nihil placeat obcaecati perferendis consequuntur amet porro hic optio atque voluptates deserunt saepe nobis, voluptas, nisi enim dolorem id tenetur error nostrum aliquid quos quaerat. Ea, soluta! Ipsa illum voluptas dolor dignissimos aliquid at natus, accusamus obcaecati. Ea, tenetur veniam iste quo sint deserunt quasi voluptas nobis voluptate assumenda, cumque ipsum quaerat explicabo, vitae ipsam omnis libero molestias! Illum, fugit amet? Accusamus ab quod dicta officiis dolorem accusantium enim. Perferendis nemo maxime eaque, culpa quasi numquam tempore perspiciatis quos temporibus, placeat architecto praesentium repellat beatae quod soluta quisquam molestiae consequatur ad, aliquam iste? Incidunt voluptate reprehenderit quis earum totam aliquid consequatur placeat, molestias quas sed ipsa veniam nostrum optio enim quisquam architecto consequuntur reiciendis dolorum aperiam quasi ratione sit quaerat blanditiis. Aliquid eligendi minus, sit sunt molestias ad, nostrum dolor delectus odit nihil magni ut est. Adipisci voluptates maiores amet perferendis accusamus praesentium distinctio vel veritatis inventore id? Impedit esse reprehenderit aspernatur nisi. Deserunt beatae dolore voluptate, eaque tempora quae quia aliquam perspiciatis veniam recusandae ratione delectus suscipit, eveniet quasi laudantium expedita deleniti provident minus inventore doloribus nostrum. Fugiat quo ducimus, aliquid ab eveniet dolores consequuntur ea, neque vero animi magni doloribus reprehenderit. Ipsam, provident cum quas sint veritatis deserunt at, quod nobis nihil, facilis suscipit enim a assumenda possimus labore accusantium unde! Labore assumenda recusandae, repudiandae molestiae illum quibusdam ea quos. Qui dolorum facilis, quae officia at iure magnam. Nam distinctio cum provident voluptatum animi excepturi, unde nesciunt doloremque labore corrupti, iste quidem officiis reiciendis accusamus, beatae ea cupiditate laboriosam nobis dignissimos? Velit doloribus tempora recusandae numquam reprehenderit rem dignissimos corrupti aut pariatur cum ab maxime expedita accusamus, cupiditate quidem error alias consectetur exercitationem libero sequi! Omnis et qui labore dolorem delectus animi quasi harum est pariatur, saepe aut dolorum explicabo aliquam maxime fugit molestiae eaque esse consectetur vitae ipsam aspernatur officia suscipit magni incidunt. Sapiente explicabo minima placeat corrupti iure sint impedit aut quos reiciendis alias, voluptate doloremque provident cum necessitatibus tenetur. Eum itaque consequatur voluptatibus veniam eaque numquam, cupiditate iure est commodi voluptates architecto officia neque, quam modi reiciendis. Provident illum facilis assumenda blanditiis saepe ipsam odio voluptate magni doloribus laudantium. Nemo molestiae rem earum culpa recusandae quisquam vitae ipsa, eos, dignissimos dolorum reprehenderit obcaecati aliquam iusto harum ipsam tenetur libero adipisci eveniet aut consectetur accusamus, corporis esse maxime. Maxime, quo ipsa mollitia repudiandae sit officiis ducimus nemo suscipit libero incidunt reiciendis ipsam deleniti dolorum sint nihil laborum, fugiat quos. Suscipit possimus quod praesentium porro cumque repellat, omnis optio! Voluptas, quod? Quis, laudantium vitae nesciunt iusto ratione inventore corrupti dolorum blanditiis suscipit praesentium cupiditate iste sequi molestias mollitia reiciendis doloremque deleniti laboriosam, quisquam quia veniam alias voluptas vel. Nostrum error aperiam unde eaque fuga! Rerum?</p>
+        </div>
+    </section>
+
+
+    <section id="closing" class="page">
+        <div class="content">
+            <h2>Terima kasih telah hadir!</h2>
+            <p>Terima kasih atas kehadiran Anda dalam momen bersejarah yang buat bumi geter ini</p>
+        </div>
+    </section>
+
+    <div id="countdown"></div>
+
+    <!-- toggle darkmode -->
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <script>
+        // document.body.classList.toggle("dark-mode") = ini utk ngapos edopi style biar layar item putih
+        // localStorage.setItem("darkMode", document.body.classList.contains("dark-mode") ? "enabled" : "disabled") = nyimpen status dark mode, men ado style dark-mode, gek enabled
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            localStorage.setItem("darkMode", document.body.classList.contains("dark-mode") ? "enabled" : "disabled");
+        }
+
+        // ngeset waktu eventny kapan
+        const eventDate = new Date("2024-01-31").getTime();
+
+        function updateCountdown() {
+            // ngitung wktu siso pke waktu yg di set kurang waktu skrng
+            const timeRemaining = eventDate - new Date().getTime();
+
+            // rumus dapet intiny buat itung sisa wktu
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // ngupdate tampilan timer
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        // ngeloop
+        setInterval(updateCountdown, 1000);
+
+        // intiny ini ambek dr local ngecek di dalem darkMode tu enabled dk, men enabled berati la edopke dark mode
+        // dalam if it utk edopke style dark mode ny
+        if (localStorage.getItem("darkMode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+</body>
+</html>
